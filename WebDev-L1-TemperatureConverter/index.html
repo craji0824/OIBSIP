@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A premium Temperature Converter application that converts Celsius, Fahrenheit, and Kelvin instantly.">
+    <title>Temperature Converter</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Animated Mouse Cursor Elements -->
+    <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot" aria-hidden="true"></div>
+
+    <!-- Animated Background System with Floating Blurred Blobs and Particles -->
+    <div class="bg-shapes" aria-hidden="true">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="particle p-1"></div>
+        <div class="particle p-2"></div>
+        <div class="particle p-3"></div>
+        <div class="particle p-4"></div>
+        <div class="particle p-5"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Glassmorphism Card -->
+        <article class="converter-card">
+            
+            <!-- Theme Toggle & Header Row -->
+            <div class="card-top-bar">
+                <div class="card-badge">
+                    <i data-lucide="thermometer" class="badge-icon"></i>
+                    <span>Converter</span>
+                </div>
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                </button>
+            </div>
+
+            <!-- Card Header -->
+            <header class="card-header">
+                <h1 class="card-title">Temperature Converter</h1>
+                <p class="card-subtitle">Convert temperatures instantly between Celsius, Fahrenheit, and Kelvin.</p>
+            </header>
+
+            <!-- Form/Input Section -->
+            <section class="input-section">
+                <!-- Status/Alert Message Box -->
+                <div id="status-message" class="status-message" role="alert" aria-live="polite"></div>
+
+                <!-- Main Form -->
+                <form id="converter-form" class="converter-form" novalidate>
+                    
+                    <!-- Temperature Value Input Group -->
+                    <div class="form-group val-group">
+                        <label for="temp-input" class="form-label">Degrees</label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="temp-input" 
+                                name="tempInput" 
+                                placeholder="Enter temperature" 
+                                autocomplete="off"
+                                aria-describedby="status-message"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Source Unit & Swap Group -->
+                    <div class="form-group unit-group">
+                        <label for="unit-select" class="form-label">From Unit</label>
+                        <div class="select-and-swap">
+                            <div class="select-wrapper">
+                                <select id="unit-select" name="unitSelect" required>
+                                    <option value="" disabled selected hidden>Select unit</option>
+                                    <option value="C">Celsius (°C)</option>
+                                    <option value="F">Fahrenheit (°F)</option>
+                                    <option value="K">Kelvin (K)</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="select-arrow" aria-hidden="true"></i>
+                            </div>
+                            <button type="button" id="swap-btn" class="btn-swap" aria-label="Swap units" title="Swap starting unit (Celsius &leftrightarrow; Fahrenheit)">
+                                <i data-lucide="arrow-up-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CTA Action Buttons -->
+                    <div class="button-group">
+                        <button type="submit" id="convert-btn" class="btn btn-primary" disabled>
+                            <span>Convert</span>
+                            <i data-lucide="arrow-right-left" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" id="reset-btn" class="btn btn-secondary">
+                            <span>Reset</span>
+                            <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- Results Showcase Section -->
+            <section id="results-section" class="results-section hidden" aria-labelledby="results-title">
+                <h2 id="results-title" class="sr-only">Conversion Results</h2>
+                
+                <!-- Temperature Status Banner -->
+                <div class="results-summary">
+                    <span class="status-label">Temperature Status:</span>
+                    <span id="temp-status" class="temp-status-badge">--</span>
+                </div>
+
+                <div class="results-grid">
+                    <!-- Celsius Card -->
+                    <div class="result-card" id="result-celsius">
+                        <div class="result-card-header">
+                            <i data-lucide="snowflake" class="result-icon icon-celsius" aria-hidden="true"></i>
+                            <span class="result-unit">Celsius</span>
+                        </div>
+                        <p class="result-value" id="val-celsius">--</p>
+                    </div>
+
+                    <!-- Fahrenheit Card -->
+                    <div class="result-card" id="result-fahrenheit">
+                        <div class="result-card-header">
+                            <i data-lucide="flame" class="result-icon icon-fahrenheit" aria-hidden="true"></i>
+                            <span class="result-unit">Fahrenheit</span>
+                        </div>
+                        <p class="result-value" id="val-fahrenheit">--</p>
+                    </div>
+
+                    <!-- Kelvin Card -->
+                    <div class="result-card" id="result-kelvin">
+                        <div class="result-card-header">
+                            <i data-lucide="sun" class="result-icon icon-kelvin" aria-hidden="true"></i>
+                            <span class="result-unit">Kelvin</span>
+                        </div>
+                        <p class="result-value" id="val-kelvin">--</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Panel Section -->
+            <section id="history-section" class="history-section hidden" aria-labelledby="history-title">
+                <div class="history-header">
+                    <h3 id="history-title" class="history-section-title">
+                        <i data-lucide="history" class="history-icon" aria-hidden="true"></i>
+                        <span>Recent Conversions</span>
+                    </h3>
+                    <button type="button" id="clear-history-btn" class="btn-clear-history" title="Clear history">
+                        <i data-lucide="trash-2"></i>
+                    </button>
+                </div>
+                <ul id="history-list" class="history-list">
+                    <!-- Loaded dynamically via script.js -->
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Lucide Icons Library (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Initialization & Core Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
