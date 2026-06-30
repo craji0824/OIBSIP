@@ -10,11 +10,11 @@ This repository features clean, responsive, and modern web applications built us
 
 The repository is organized into three distinct project directories:
 
-### 1. 🚀 [Landing Page](./WebDev-L1-LandingPage)
+### 1.  [Landing Page](./WebDev-L1-LandingPage)
 A clean, premium, and fully responsive landing page showcasing product features, dynamic hover states, responsive layouts, and interactive elements.
 - **Tech Stack**: HTML5, CSS3
 
-### 2. 💼 [Personal Portfolio](./WebDev-L1-PersonalPortfolio)
+### 2.  [Personal Portfolio](./WebDev-L1-PersonalPortfolio)
 A professional, modern portfolio website showcasing skills, projects, background, and certifications.
 - **Features**: 
   - Smooth-scrolling sections
@@ -23,7 +23,7 @@ A professional, modern portfolio website showcasing skills, projects, background
   - Interactive projects grid and contact form
 - **Tech Stack**: HTML5, CSS3, Vanilla JavaScript
 
-### 3. 🌡️ [Temperature Converter](./WebDev-L1-TemperatureConverter)
+### 3.  [Temperature Converter](./WebDev-L1-TemperatureConverter)
 A high-fidelity, premium glassmorphism temperature converter card with modern design aesthetics.
 - **Features**:
   - Simultaneous Celsius, Fahrenheit, and Kelvin conversions
@@ -37,7 +37,7 @@ A high-fidelity, premium glassmorphism temperature converter card with modern de
 
 ---
 
-## 💻 Getting Started
+##  Getting Started
 
 All projects are client-side only and can be run locally without any compiler or server configuration:
 
@@ -57,7 +57,7 @@ All projects are client-side only and can be run locally without any compiler or
 
 ---
 
-## 👤 Author
+##  Author
 
 **Rajashree C**
 - GitHub: [@craji0824](https://github.com/craji0824)
