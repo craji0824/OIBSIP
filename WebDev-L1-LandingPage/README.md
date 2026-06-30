@@ -1,12 +1,12 @@
 # NexaAI - AI Landing Page (Oasis Infobyte Task 1)
 
-Hey there! 👋 This is my submission for **Task 1 (Level 1)** of the **Oasis Infobyte Web Development Internship**. 
+Hey there! This is my submission for **Task 1 (Level 1)** of the **Oasis Infobyte Web Development Internship**. 
 
 I built a landing page for a fictional product called **NexaAI**, which is a productivity app powered by AI. My main goal was to make it look super modern, sleek, and fully responsive using just raw HTML, CSS, and basic JavaScript (no big frameworks!).
 
 ---
 
-## 🎨 What I Built (Features)
+##  What I Built (Features)
 
 *   **Modern Dark Theme**: Designed a premium-looking dark mode using clean HSL colors, glowing gradient backdrops, and a subtle grain overlay.
 *   **Interactive Workspace Preview**: The hero section has a simulated chat window showing NexaAI typing out a response in real-time.
@@ -19,7 +19,7 @@ I built a landing page for a fictional product called **NexaAI**, which is a pro
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 *   **HTML5** for page structure (using proper tags like `<nav>`, `<header>`, `<section>`, etc.)
 *   **Pure CSS3** for layouts (Flexbox & CSS Grid), animations, and custom variables
@@ -29,7 +29,7 @@ I built a landing page for a fictional product called **NexaAI**, which is a pro
 
 ---
 
-## 🚀 How to Run it Locally
+##  How to Run it Locally
 
 It's super easy to run this project since it doesn't need any npm installations or build commands:
 
@@ -43,7 +43,7 @@ It's super easy to run this project since it doesn't need any npm installations 
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
 While building this landing page, I got to practice:
 - Creating complex grid layouts (like Bento cards) and making them fully responsive.
@@ -53,6 +53,6 @@ While building this landing page, I got to practice:
 
 ---
 
-## 🌟 Credits
+##  Credits
 
 Thanks to **Oasis Infobyte** for the awesome internship tasks! It was a great opportunity to practice my front-end skills.
