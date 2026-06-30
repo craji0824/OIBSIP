@@ -2,7 +2,7 @@
 
 A premium, production-quality Temperature Converter web application built using standard modern HTML5, CSS3, and Vanilla JavaScript. This project was developed as a task for Level 1 of the Oasis Infobyte Web Development Internship.
 
-## 🌟 Features
+##  Features
 
 - **Premium UI**: Beautiful glassmorphism card styled with a moving/pulsing gradient background.
 - **Instant Simultaneous Conversions**: Inputting a value and selecting a unit yields conversions in Celsius, Fahrenheit, and Kelvin all at once.
@@ -21,14 +21,14 @@ A premium, production-quality Temperature Converter web application built using 
   - Screen reader semantic announcements (`aria-live`, `role="alert"`).
   - Pressing the `Enter` key inside the text field triggers the conversion.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5**: Semantic elements and ARIA accessibility roles.
 - **CSS3**: CSS Grid, Flexbox, custom property variables, glassmorphic layout properties, and keyframe animations.
 - **Vanilla JavaScript**: DOM handlers, real-time input filtering, conversion formulas, and state validation.
 - **Lucide Icons**: Loaded via CDN.
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```text
 WebDev-L1-TemperatureConverter/
@@ -38,7 +38,7 @@ WebDev-L1-TemperatureConverter/
 └── README.md            # Project documentation (this file)
 ```
 
-## ⚙️ Installation
+##  Installation
 
 To run this application locally, you do not need any backend setup or installation processes:
 
@@ -50,18 +50,18 @@ To run this application locally, you do not need any backend setup or installati
    ```
 4. Access the application in your browser at `http://localhost:8085/`.
 
-## 💡 Usage
+##  Usage
 
 1. Type a temperature value in the **Degrees** input field (numbers, decimal points, and negative signs are supported; letters are automatically filtered out).
 2. Select your starting unit from the **From Unit** dropdown menu.
 3. Click the **Convert** button (or press `Enter` in the text field) to see instant, simultaneous conversions across Celsius, Fahrenheit, and Kelvin.
 4. Click the **Reset** button to wipe all fields and start over.
 
-## 🛡️ License
+##  License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+##  Author
 
 **Rajashree C**
 - GitHub: [@craji0824](https://github.com/craji0824)
