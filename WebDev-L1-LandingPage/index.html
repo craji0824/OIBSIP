@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaAI — Supercharge Your Productivity with AI</title>
+  <meta name="description" content="NexaAI is the AI-powered productivity suite that writes, thinks, and organizes for you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo"><span class="logo-icon">&#x2B21;</span> NexaAI</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost" id="nav-login">Log In</a>
+        <a href="#pricing" class="btn btn-primary btn-sm" id="nav-cta">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-glow hero-glow--purple"></div>
+    <div class="hero-glow hero-glow--blue"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">&#x2726; Now with GPT-5 Turbo Integration</span>
+      <h1 class="hero-title">Your AI-Powered<br /><span class="gradient-text">Productivity Engine</span></h1>
+      <p class="hero-subtitle">NexaAI writes, researches, organises, and automates — so you can focus on work that actually matters. Trusted by 50,000+ teams worldwide.</p>
+      <div class="hero-cta-group">
+        <a href="#pricing" class="btn btn-primary btn-lg" id="hero-cta-primary">Start Free Trial <span class="btn-arrow">&rarr;</span></a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg" id="hero-cta-secondary">Watch Demo</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-number">50K+</span><span class="hero-stat-label">Active Teams</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-number">4.9&#x2605;</span><span class="hero-stat-label">User Rating</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-number">10M+</span><span class="hero-stat-label">Tasks Automated</span></div>
+      </div>
+    </div>
+    <!-- App Mockup -->
+    <div class="hero-mockup">
+      <div class="mockup-window">
+        <div class="mockup-toolbar">
+          <span class="mockup-dot mockup-dot--red"></span>
+          <span class="mockup-dot mockup-dot--yellow"></span>
+          <span class="mockup-dot mockup-dot--green"></span>
+          <span class="mockup-toolbar-title">NexaAI Workspace</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-sidebar">
+            <div class="mockup-sidebar-item active">&#x2B21; Dashboard</div>
+            <div class="mockup-sidebar-item">&#x270E; AI Writer</div>
+            <div class="mockup-sidebar-item">&#x229E; Projects</div>
+            <div class="mockup-sidebar-item">&#x26A1; Automations</div>
+          </div>
+          <div class="mockup-main">
+            <div class="mockup-chat">
+              <div class="mockup-msg mockup-msg--user">Summarise this 40-page report in 3 bullet points</div>
+              <div class="mockup-msg mockup-msg--ai">
+                <span class="mockup-ai-label">NexaAI</span>
+                &#8226; Revenue grew 34% YoY driven by enterprise adoption<br />
+                &#8226; Customer retention improved to 96.2%<br />
+                &#8226; New AI features reduced avg. task time by 4.7x
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features" class="section features">
+    <div class="container">
+      <span class="section-badge">Features</span>
+      <h2 class="section-title">Everything you need to <span class="gradient-text">work smarter</span></h2>
+      <p class="section-subtitle">One platform. Infinite leverage. NexaAI replaces 5+ tools in your stack.</p>
+      <div class="features-grid">
+        <div class="feature-card" id="feature-writer">
+          <div class="feature-icon feature-icon--purple">&#x2726;</div>
+          <h3>AI Writer</h3>
+          <p>Generate blogs, emails, reports, and code in seconds. Trained on your brand voice.</p>
+        </div>
+        <div class="feature-card" id="feature-search">
+          <div class="feature-icon feature-icon--blue">&#x2295;</div>
+          <h3>Smart Search</h3>
+          <p>Semantic search across all your docs, Slack, and email. Ask in plain English.</p>
+        </div>
+        <div class="feature-card" id="feature-auto">
+          <div class="feature-icon feature-icon--cyan">&#x26A1;</div>
+          <h3>Automations</h3>
+          <p>Build AI-powered workflows with drag-and-drop. No code required.</p>
+        </div>
+        <div class="feature-card" id="feature-collab">
+          <div class="feature-icon feature-icon--pink">&#x25C8;</div>
+          <h3>Team Spaces</h3>
+          <p>Real-time collaboration with AI copilot, shared context, and RBAC.</p>
+        </div>
+        <div class="feature-card" id="feature-insights">
+          <div class="feature-icon feature-icon--green">&#x25C9;</div>
+          <h3>Analytics</h3>
+          <p>AI dashboards surfacing trends, risks, and opportunities from your data.</p>
+        </div>
+        <div class="feature-card" id="feature-integrations">
+          <div class="feature-icon feature-icon--orange">&#x2B22;</div>
+          <h3>200+ Integrations</h3>
+          <p>Connect Slack, Notion, Google, GitHub, Jira, and more — in one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section how-it-works">
+    <div class="container">
+      <span class="section-badge">How It Works</span>
+      <h2 class="section-title">Up and running in <span class="gradient-text">3 minutes</span></h2>
+      <p class="section-subtitle">No setup headaches. No learning curve. Just results.</p>
+      <div class="steps-grid">
+        <div class="step-card" id="step-1">
+          <div class="step-number">01</div>
+          <h3>Connect Your Tools</h3>
+          <p>Link Google Drive, Slack, Notion, or any of 200+ integrations.</p>
+          <div class="step-visual"><span class="tool-icon">G</span><span class="tool-icon">S</span><span class="tool-icon">N</span><span class="tool-icon">+</span></div>
+        </div>
+        <div class="step-card" id="step-2">
+          <div class="step-number">02</div>
+          <h3>Train Your AI</h3>
+          <p>NexaAI learns your style, processes, and domain knowledge automatically.</p>
+          <div class="step-visual"><div class="step-progress"><div class="step-progress-bar"></div></div><span class="step-progress-label">Learning... 94%</span></div>
+        </div>
+        <div class="step-card" id="step-3">
+          <div class="step-number">03</div>
+          <h3>Ship 10x Faster</h3>
+          <p>Automate busywork and let AI handle it while you focus on strategy.</p>
+          <div class="step-visual"><span class="step-metric-number">10x</span><span class="step-metric-label">Faster Output</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <span class="section-badge">Pricing</span>
+      <h2 class="section-title">Simple, transparent <span class="gradient-text">pricing</span></h2>
+      <p class="section-subtitle">Start free. Scale when you're ready. No surprises.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card" id="plan-starter">
+          <h3 class="pricing-plan">Starter</h3>
+          <p class="pricing-tagline">For individuals</p>
+          <div class="pricing-price"><span class="price-currency">$</span><span class="price-amount">0</span><span class="price-period">/mo</span></div>
+          <ul class="pricing-features"><li>&#10003; 50 AI generations / day</li><li>&#10003; 3 integrations</li><li>&#10003; Basic analytics</li><li>&#10003; Community support</li></ul>
+          <a href="#" class="btn btn-outline btn-block" id="plan-starter-cta">Get Started</a>
+        </div>
+        <div class="pricing-card pricing-card--featured" id="plan-pro">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-plan">Pro</h3>
+          <p class="pricing-tagline">For power users</p>
+          <div class="pricing-price"><span class="price-currency">$</span><span class="price-amount">29</span><span class="price-period">/mo</span></div>
+          <ul class="pricing-features"><li>&#10003; Unlimited generations</li><li>&#10003; 50+ integrations</li><li>&#10003; Advanced analytics</li><li>&#10003; Team collab (10 seats)</li><li>&#10003; Priority support</li><li>&#10003; Custom AI training</li></ul>
+          <a href="#" class="btn btn-primary btn-block" id="plan-pro-cta">Start Free Trial</a>
+        </div>
+        <div class="pricing-card" id="plan-enterprise">
+          <h3 class="pricing-plan">Enterprise</h3>
+          <p class="pricing-tagline">For organisations</p>
+          <div class="pricing-price"><span class="price-amount price-amount--custom">Custom</span></div>
+          <ul class="pricing-features"><li>&#10003; Everything in Pro</li><li>&#10003; Unlimited seats</li><li>&#10003; SSO &amp; SAML</li><li>&#10003; Dedicated manager</li><li>&#10003; SLA &amp; on-prem</li><li>&#10003; Model fine-tuning</li></ul>
+          <a href="#" class="btn btn-outline btn-block" id="plan-enterprise-cta">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <span class="section-badge">Testimonials</span>
+      <h2 class="section-title">Loved by <span class="gradient-text">teams everywhere</span></h2>
+      <p class="section-subtitle">Here's what our users say.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="testimonial-1">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"NexaAI cut our content production time by 80%. What used to take a full day now happens in under an hour."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#a855f7,#6366f1);">SC</div>
+            <div><span class="testimonial-name">Sarah Chen</span><span class="testimonial-role">VP Marketing, Dropbase</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial-2">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"We replaced Jasper, Notion AI, and two other tools with NexaAI. One subscription, way better results."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#06b6d4,#3b82f6);">MR</div>
+            <div><span class="testimonial-name">Marcus Rivera</span><span class="testimonial-role">CTO, Launchpad Studios</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial-3">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The AI automations saved us 120+ hours per month. It feels like having a genius intern on the team."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:linear-gradient(135deg,#ec4899,#8b5cf6);">AK</div>
+            <div><span class="testimonial-name">Aisha Khan</span><span class="testimonial-role">Head of Ops, Finova</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section cta-banner">
+    <div class="cta-glow"></div>
+    <div class="container cta-content">
+      <h2 class="cta-title">Ready to work at the speed of thought?</h2>
+      <p class="cta-subtitle">Join 50,000+ teams already using NexaAI. Free forever on Starter.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg" id="cta-final">Get Started Free &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo"><span class="logo-icon">&#x2B21;</span> NexaAI</a>
+          <p class="footer-desc">AI-powered productivity for modern teams.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">&#x1D54F;</a>
+            <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" id="social-github" aria-label="GitHub">&#x2299;</a>
+            <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">&#x25B6;</a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Product</h4>
+          <ul class="footer-links"><li><a href="#features">Features</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#">Integrations</a></li><li><a href="#">Changelog</a></li></ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul class="footer-links"><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Security</a></li><li><a href="#">GDPR</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NexaAI Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle=document.getElementById('nav-toggle'),links=document.getElementById('nav-links');
+    toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.classList.toggle('active');});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.classList.remove('active');}));
+    window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);});
+  </script>
+</body>
+</html>
