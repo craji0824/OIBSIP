@@ -11,6 +11,8 @@ This repository features clean, responsive, and modern web applications built us
 ### Personal Portfolio [Click Here](https://portfolio-omega-tan-34duvynqe6.vercel.app)
 ### Temperature Converter [Click Here](https://tempconverter-six.vercel.app)
 
+---
+
 ## 📂 Repository Structure
 
 The repository is organized into three distinct project directories:
