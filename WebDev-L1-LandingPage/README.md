@@ -36,7 +36,7 @@ It's super easy to run this project since it doesn't need any npm installations 
 
 1.  **Download or clone the files:**
     ```bash
-    git clone https://github.com/your-username/OIBSIP.git
+    git clone https://github.com/craji0824/OIBSIP
     cd OIBSIP/WebDev-L1-LandingPage
     ```
 2.  **Open it up:**
@@ -57,3 +57,10 @@ While building this landing page, I got to practice:
 ##  Credits
 
 Thanks to **Oasis Infobyte** for the awesome internship tasks! It was a great opportunity to practice my front-end skills.
+
+##  Author
+
+**Rajashree C**
+- **GitHub**: [@craji0824](https://github.com/craji0824)
+- **LinkedIn**: [Rajashree C](https://www.linkedin.com/in/rajashree-c-47a3913a5/)
+- **Email**: craji0824@gmail.com
