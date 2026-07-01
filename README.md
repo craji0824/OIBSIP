@@ -21,7 +21,7 @@ The repository is organized into three distinct project directories:
 A clean, premium, and fully responsive landing page showcasing product features, dynamic hover states, responsive layouts, and interactive elements.
 - **Tech Stack**: HTML5, CSS3
 
-### 2.  [Personal Portfolio](https://landing-page-nine-omega-62.vercel.app)
+### 2.  [Personal Portfolio](https://portfolio-omega-tan-34duvynqe6.vercel.app)
 A professional, modern portfolio website showcasing skills, projects, background, and certifications.
 - **Features**: 
   - Smooth-scrolling sections
