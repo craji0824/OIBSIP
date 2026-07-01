@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const valFahrenheit = document.getElementById('val-fahrenheit');
     const valKelvin = document.getElementById('val-kelvin');
     const tempStatus = document.getElementById('temp-status');
+    const thermometerFluid = document.getElementById('thermometer-fluid');
+    const thermometerBubble = document.getElementById('thermometer-bubble');
 
     // History Panel elements
     const historySection = document.getElementById('history-section');
@@ -126,8 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const savedTheme = localStorage.getItem('converter-theme');
         if (savedTheme) return savedTheme;
         
-        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-        return prefersLight ? 'light' : 'dark';
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'dark' : 'light';
     };
 
     const applyTheme = (theme) => {
@@ -422,6 +424,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update background theme dynamically based on temperature
         updateDynamicTheme(celsius);
 
+        // Update thermometer visualization
+        if (thermometerFluid && thermometerBubble) {
+            const minTemp = -40;
+            const maxTemp = 100;
+            let percentage = ((celsius - minTemp) / (maxTemp - minTemp)) * 100;
+            // Clamp percentage between 0 and 100
+            percentage = Math.max(0, Math.min(100, percentage));
+            
+            thermometerFluid.style.height = `${percentage}%`;
+            thermometerBubble.textContent = `${roundToTwoDecimals(celsius)}°C`;
+        }
+
         // Append to local storage history logs
         addHistoryEntry(value, sourceUnit, celsius, fahrenheit, kelvin);
 
@@ -498,6 +512,13 @@ document.addEventListener('DOMContentLoaded', () => {
         valFahrenheit.textContent = '--';
         valKelvin.textContent = '--';
         tempStatus.textContent = '--';
+
+        if (thermometerFluid) {
+            thermometerFluid.style.height = '0%';
+        }
+        if (thermometerBubble) {
+            thermometerBubble.textContent = '--';
+        }
 
         clearMessage();
         resetDynamicTheme();

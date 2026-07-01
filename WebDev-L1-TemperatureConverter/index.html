@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,32 +120,74 @@
                     <span id="temp-status" class="temp-status-badge">--</span>
                 </div>
 
-                <div class="results-grid">
-                    <!-- Celsius Card -->
-                    <div class="result-card" id="result-celsius">
-                        <div class="result-card-header">
-                            <i data-lucide="snowflake" class="result-icon icon-celsius" aria-hidden="true"></i>
-                            <span class="result-unit">Celsius</span>
+                <!-- Combined Results and Thermometer Visualization -->
+                <div class="results-content">
+                    <div class="results-grid">
+                        <!-- Celsius Card -->
+                        <div class="result-card" id="result-celsius">
+                            <div class="result-card-header">
+                                <i data-lucide="snowflake" class="result-icon icon-celsius" aria-hidden="true"></i>
+                                <span class="result-unit">Celsius</span>
+                            </div>
+                            <p class="result-value" id="val-celsius">--</p>
                         </div>
-                        <p class="result-value" id="val-celsius">--</p>
+
+                        <!-- Fahrenheit Card -->
+                        <div class="result-card" id="result-fahrenheit">
+                            <div class="result-card-header">
+                                <i data-lucide="flame" class="result-icon icon-fahrenheit" aria-hidden="true"></i>
+                                <span class="result-unit">Fahrenheit</span>
+                            </div>
+                            <p class="result-value" id="val-fahrenheit">--</p>
+                        </div>
+
+                        <!-- Kelvin Card -->
+                        <div class="result-card" id="result-kelvin">
+                            <div class="result-card-header">
+                                <i data-lucide="sun" class="result-icon icon-kelvin" aria-hidden="true"></i>
+                                <span class="result-unit">Kelvin</span>
+                            </div>
+                            <p class="result-value" id="val-kelvin">--</p>
+                        </div>
                     </div>
 
-                    <!-- Fahrenheit Card -->
-                    <div class="result-card" id="result-fahrenheit">
-                        <div class="result-card-header">
-                            <i data-lucide="flame" class="result-icon icon-fahrenheit" aria-hidden="true"></i>
-                            <span class="result-unit">Fahrenheit</span>
-                        </div>
-                        <p class="result-value" id="val-fahrenheit">--</p>
-                    </div>
+                    <!-- Thermometer Visualization -->
+                    <div class="thermometer-visualization" aria-hidden="true">
+                        <div class="thermometer-container">
+                            <!-- Left Scale (Celsius) -->
+                            <div class="thermometer-scale scale-left">
+                                <span class="scale-mark" style="bottom: 100%"><span>100°C</span></span>
+                                <span class="scale-mark" style="bottom: 85.7%"><span>80°C</span></span>
+                                <span class="scale-mark" style="bottom: 71.4%"><span>60°C</span></span>
+                                <span class="scale-mark" style="bottom: 57.1%"><span>40°C</span></span>
+                                <span class="scale-mark" style="bottom: 42.9%"><span>20°C</span></span>
+                                <span class="scale-mark" style="bottom: 28.6%"><span>0°C</span></span>
+                                <span class="scale-mark" style="bottom: 14.3%"><span>-20°C</span></span>
+                                <span class="scale-mark" style="bottom: 0%"><span>-40°C</span></span>
+                            </div>
 
-                    <!-- Kelvin Card -->
-                    <div class="result-card" id="result-kelvin">
-                        <div class="result-card-header">
-                            <i data-lucide="sun" class="result-icon icon-kelvin" aria-hidden="true"></i>
-                            <span class="result-unit">Kelvin</span>
+                            <!-- Thermometer graphic -->
+                            <div class="thermometer-glass">
+                                <div class="thermometer-stem">
+                                    <div id="thermometer-fluid" class="thermometer-fluid">
+                                        <div id="thermometer-bubble" class="thermometer-value-bubble">--</div>
+                                    </div>
+                                </div>
+                                <div class="thermometer-bulb"></div>
+                            </div>
+
+                            <!-- Right Scale (Fahrenheit) -->
+                            <div class="thermometer-scale scale-right">
+                                <span class="scale-mark" style="bottom: 100%"><span>212°F</span></span>
+                                <span class="scale-mark" style="bottom: 85.7%"><span>176°F</span></span>
+                                <span class="scale-mark" style="bottom: 71.4%"><span>140°F</span></span>
+                                <span class="scale-mark" style="bottom: 57.1%"><span>104°F</span></span>
+                                <span class="scale-mark" style="bottom: 42.9%"><span>68°F</span></span>
+                                <span class="scale-mark" style="bottom: 28.6%"><span>32°F</span></span>
+                                <span class="scale-mark" style="bottom: 14.3%"><span>-4°F</span></span>
+                                <span class="scale-mark" style="bottom: 0%"><span>-40°F</span></span>
+                            </div>
                         </div>
-                        <p class="result-value" id="val-kelvin">--</p>
                     </div>
                 </div>
             </section>
