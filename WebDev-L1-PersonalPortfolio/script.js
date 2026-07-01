@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const themeToggle = document.getElementById('theme-toggle');
     
-    // Check if user has saved a theme preference, otherwise check system preferences, otherwise default to dark
+    // Check if user has saved a theme preference, otherwise check system preferences, otherwise default to light
     const getSavedTheme = () => {
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             return savedTheme;
         }
-        const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-        return userPrefersLight ? 'light' : 'dark';
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return userPrefersDark ? 'dark' : 'light';
     };
 
     // Apply the theme
